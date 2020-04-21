@@ -2,11 +2,11 @@ import MySQLdb
 
 
 def connection():
-    host = "cafdatabasehawaii.cmkcaklh2zi6.us-east-1.rds.amazonaws.com"
-    port = 3306
-    dbUser = "jahama"
-    database = "cafdatabasehawaii"
-    dbPass="Kaizen1!"
+    host = <mysql database host>
+    port = <port>
+    dbUser = <user_id>
+    database = <database_name>
+    dbPass= <password>
 
     conn = MySQLdb.connect(host=host,port=port,user=dbUser,passwd=dbPass,db=database)
     c =  conn.cursor()
